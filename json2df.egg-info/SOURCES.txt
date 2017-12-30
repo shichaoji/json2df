@@ -7,4 +7,3 @@ json2df.egg-info/PKG-INFO
 json2df.egg-info/SOURCES.txt
 json2df.egg-info/dependency_links.txt
 json2df.egg-info/top_level.txt
-

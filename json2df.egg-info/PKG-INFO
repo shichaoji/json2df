@@ -11,3 +11,5 @@ Description-Content-Type: UNKNOWN
 Description: UNKNOWN
 Keywords: data,json,dataframe,python
 Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

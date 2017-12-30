@@ -92,10 +92,10 @@ class LoadFile(object):
     #@doc("this command accepts these values: {values}".format(values=text))
     def load_data(self, path, *args, **kwargs):
         """see print instance.doc, e.g. cat=LoadFile(kind='excel')
-          read how to use cat.load_data, exec: print cat.doc"""
+          read how to use cat.load_data, exec: print (cat.doc)"""
         self.df = self._load(path,*args, **kwargs)
         self.series = self.df.iloc[:,0]
-        print "Success! file length: " +str(self.df.shape[0])
+        print ("Success! file length: " +str(self.df.shape[0]))
     
     def convert(self, layer=2, split_sign = '_', *args, **kwargs):
         """convert data to DataFrame"""
