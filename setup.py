@@ -9,7 +9,7 @@ setup(
     url = "https://github.com/shichaoji2016/json2df",
     download_url = "https://github.com/shichaoji2016/json2df/archive/0.1.1.tar.gz",
     keywords = ['data','json','dataframe','python'],
-    classifiers = [],
+    classifiers = ['Programming Language :: Python :: 2', 'Programming Language :: Python :: 3'],
     packages = find_packages(),
 )
 
