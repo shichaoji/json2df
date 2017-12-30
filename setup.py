@@ -7,7 +7,7 @@ setup(
     author = "Shichao(Richard) Ji",
     author_email = "jshichao@vt.edu",
     url = "https://github.com/shichaoji2016/json2df",
-    download_url = "https://github.com/shichaoji2016/json2df/archive/0.1.tar.gz",
+    download_url = "https://github.com/shichaoji2016/json2df/archive/0.1.1.tar.gz",
     keywords = ['data','json','dataframe','python'],
     classifiers = [],
     packages = find_packages(),
