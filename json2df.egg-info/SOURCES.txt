@@ -1,3 +1,5 @@
+README.md
+setup.cfg
 setup.py
 json2df/__init__.py
 json2df/base.py

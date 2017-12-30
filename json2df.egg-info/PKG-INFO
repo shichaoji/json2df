@@ -1,11 +1,13 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: json2df
 Version: 0.1
-Summary: UNKNOWN
-Home-page: UNKNOWN
-Author: UNKNOWN
-Author-email: UNKNOWN
+Summary: convert json data to Pandas DataFrame
+Home-page: https://github.com/shichaoji2016/json2df
+Author: Shichao(Richard) Ji
+Author-email: jshichao@vt.edu
 License: UNKNOWN
+Download-URL: https://github.com/shichaoji2016/json2df/archive/0.1.tar.gz
 Description-Content-Type: UNKNOWN
 Description: UNKNOWN
+Keywords: data,json,dataframe,python
 Platform: UNKNOWN
