@@ -1,0 +1,7 @@
+setup.py
+json2df/__init__.py
+json2df/base.py
+json2df.egg-info/PKG-INFO
+json2df.egg-info/SOURCES.txt
+json2df.egg-info/dependency_links.txt
+json2df.egg-info/top_level.txt
