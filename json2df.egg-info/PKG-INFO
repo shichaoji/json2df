@@ -1,15 +1,16 @@
 Metadata-Version: 1.1
 Name: json2df
-Version: 0.1
+Version: 0.1.2
 Summary: convert json data to Pandas DataFrame
 Home-page: https://github.com/shichaoji2016/json2df
 Author: Shichao(Richard) Ji
 Author-email: jshichao@vt.edu
-License: UNKNOWN
+License: MIT
 Download-URL: https://github.com/shichaoji2016/json2df/archive/0.1.1.tar.gz
 Description-Content-Type: UNKNOWN
 Description: UNKNOWN
 Keywords: data,json,dataframe,python
 Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 3
