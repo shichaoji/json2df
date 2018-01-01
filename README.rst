@@ -129,8 +129,8 @@ view first row
 .. code:: ipython2
 
     first_row = df['location'].head()[0]
+    
     print type(first_row)
-    first_row
 
 
 .. parsed-literal::
@@ -148,12 +148,9 @@ view first row
 
 convert the string representation into a python dictionary
 
-as you can see the json data has inner loop
-
 .. code:: ipython2
 
-    import ast
-    ast.literal_eval(first_row)
+    as you can see the json data has inner loop
 
 
 
