@@ -18,10 +18,12 @@ installation
 usage example
 ~~~~~~~~~~~~~
 
+https://github.com/shichaoji/json2df
+
 e.g. when you scrape some users info data from a website, usually some
 fields contains json data format
 
-.. code:: ipython2
+.. code:: python
 
     import pandas as pd
     df = pd.read_csv('https://raw.githubusercontent.com/shichaoji/json2df/master/sample.csv')
@@ -34,6 +36,10 @@ fields contains json data format
 
     (100, 5)
 
+
+
+.. code:: python
+
     df.head(3)
 
 
@@ -42,7 +48,7 @@ fields contains json data format
 .. raw:: html
 
     <div>
-    <table border="1" class="dataframe">
+       <table border="1" class="dataframe">
       <thead>
         <tr style="text-align: right;">
           <th></th>
@@ -89,7 +95,7 @@ e.g. we want to extract the location field and convert into a dataframe
 
 select location
 
-.. code:: ipython2
+.. code:: python
 
     df['location'].head()
 
@@ -109,16 +115,20 @@ select location
 
 view first row
 
-.. code:: ipython2
+.. code:: python
 
     first_row = df['location'].head()[0]
-    
     print type(first_row)
 
 
 .. parsed-literal::
 
     <type 'str'>
+
+
+.. code:: python
+
+    first_row
 
 
 
@@ -131,9 +141,12 @@ view first row
 
 convert the string representation into a python dictionary
 
-.. code:: ipython2
+as you can see the json data has inner loop
 
-    as you can see the json data has inner loop
+.. code:: python
+
+    import ast
+    ast.literal_eval(first_row)
 
 
 
@@ -168,7 +181,7 @@ convert the string representation into a python dictionary
 user json2df to convert the entire location field (Series) into a DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: ipython2
+.. code:: python
 
     from json2df import series2df
     
@@ -189,7 +202,7 @@ user json2df to convert the entire location field (Series) into a DataFrame
 .. raw:: html
 
     <div>
-    <table border="1" class="dataframe">
+       <table border="1" class="dataframe">
       <thead>
         <tr style="text-align: right;">
           <th></th>
@@ -321,6 +334,29 @@ user json2df to convert the entire location field (Series) into a DataFrame
           <td>None</td>
           <td>canada</td>
           <td>/img/flags/png/ca.png</td>
+          <td>//cdn6.f-cdn.com/img/flags/png/ca.png</td>
+          <td>/img/flags/highres_png/canada.png</td>
+          <td>//cdn6.f-cdn.com/img/flags/highres_png/canada.png</td>
+          <td>None</td>
+          <td>...</td>
+          <td>Canada</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td>None</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>5 rows × 22 columns</p>
+    </div>
+
+
+ng/ca.png</td>
           <td>//cdn6.f-cdn.com/img/flags/png/ca.png</td>
           <td>/img/flags/highres_png/canada.png</td>
           <td>//cdn6.f-cdn.com/img/flags/highres_png/canada.png</td>
