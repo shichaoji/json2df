@@ -47,6 +47,11 @@ def unpack_dict(dictionary, layer=1, keep_deeper=True, split_sign='.'):
 
 def series2df(Series, layer=2, split_sign = '_'):
     """expect pass a series that each row is string formated Json data with the same structure"""
+    try:
+        Series.columns
+        Series = Series.iloc[:,0]
+    except:
+        pass
     
     def _helper(x, layer=2):
         try:
@@ -87,6 +92,8 @@ class LoadFile(object):
         else:
             self._load = pd.read_excel
         self.doc = self._load.__doc__
+        
+        print('choose file type: '+kind+'\n please use instance.load_data(path) to load data')
         
         
     #@doc("this command accepts these values: {values}".format(values=text))
