@@ -34,10 +34,6 @@ fields contains json data format
 
     (100, 5)
 
-
-
-.. code:: ipython2
-
     df.head(3)
 
 
