@@ -26,19 +26,10 @@ fields contains json data format
     import pandas as pd
     df = pd.read_csv('https://raw.githubusercontent.com/shichaoji/json2df/master/sample.csv')
     df.shape
-
-
-
-
-.. parsed-literal::
-
+    
     (100, 5)
-
-
-
-.. code:: ipython2
-
     df.head(3)
+
 
 
 
