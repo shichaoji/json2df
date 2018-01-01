@@ -14,6 +14,7 @@ _HERE = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
     long_description=fh.read().replace("""<style scoped>\n        .dataframe tbody tr th:only-of-type {\n            vertical-align: middle;\n        }\n    \n        .dataframe tbody tr th {\n            vertical-align: top;\n        }\n    \n        .dataframe thead th {\n            text-align: right;\n        }\n    </style>\n """, "").replace("ipython2","python")
     fh.seek(0)
+    fh.truncate()
     fh.write(long_description)
     fh.seek(0)
     text_pypi = ''.join(fh.readlines()[:21])
@@ -30,7 +31,7 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "json2df",
-    version = "0.1.4.0",
+    version = "0.1.4.2",
     description = "convert json data to Pandas DataFrame",
     long_description = text_pypi,
     author = "Shichao(Richard) Ji",

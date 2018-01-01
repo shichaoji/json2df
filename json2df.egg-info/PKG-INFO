@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: json2df
-Version: 0.1.4.0
+Version: 0.1.4.2
 Summary: convert json data to Pandas DataFrame
 Home-page: https://github.com/shichaoji/json2df
 Author: Shichao(Richard) Ji

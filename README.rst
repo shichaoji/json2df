@@ -356,26 +356,3 @@ user json2df to convert the entire location field (Series) into a DataFrame
     </div>
 
 
-ng/ca.png</td>
-          <td>//cdn6.f-cdn.com/img/flags/png/ca.png</td>
-          <td>/img/flags/highres_png/canada.png</td>
-          <td>//cdn6.f-cdn.com/img/flags/highres_png/canada.png</td>
-          <td>None</td>
-          <td>...</td>
-          <td>Canada</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>5 rows × 22 columns</p>
-    </div>
-
-
