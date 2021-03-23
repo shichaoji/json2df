@@ -31,7 +31,7 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "json2df",
-    version = "0.2",
+    version = "0.2.1",
     description = "convert json data to Pandas DataFrame",
     long_description = text_pypi,
     author = "Shichao(Richard) Ji",
