@@ -31,13 +31,13 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "json2df",
-    version = "0.1.4.2",
+    version = "0.2",
     description = "convert json data to Pandas DataFrame",
     long_description = text_pypi,
     author = "Shichao(Richard) Ji",
     author_email = "jshichao@vt.edu",
     url = "https://github.com/shichaoji/json2df",
-    download_url = "https://github.com/shichaoji/json2df/archive/0.1.1.tar.gz",
+    # download_url = "https://github.com/shichaoji/json2df/archive/0.1.1.tar.gz",
     license = 'MIT',
     keywords = ['data','json','dataframe','python'],
     classifiers = [

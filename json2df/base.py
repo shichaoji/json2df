@@ -52,8 +52,10 @@ def series2df(Series, layer=2, split_sign = '_'):
         Series = Series.iloc[:,0]
     except:
         pass
-    
-    def _helper(x, layer=2):
+
+    Series = Series.fillna('{}')
+
+    def _helper(x, layer=layer):
         try:
             return flatten_dict(ast.literal_eval(x), layers=layer, split_sign=split_sign)
         except:
@@ -65,6 +67,22 @@ def series2df(Series, layer=2, split_sign = '_'):
     df=pd.DataFrame(Series.apply(_helper).tolist())
     
     return df
+
+
+def df2df(df, split_sign='_', layer=2, include_cols=None, exclude_cols=None):
+    if include_cols:
+        df = df[include_cols]
+    exclude_cols = exclude_cols if exclude_cols else []
+
+    c = []
+    for col in df:
+        if col not in exclude_cols:
+            tmp = series2df(df[col], split_sign=split_sign, layer=layer)
+            tmp.columns = map(lambda x: col + split_sign + str(x) if x != 0 else col, tmp.columns)
+            c.append(tmp)
+    r = pd.concat(c, axis=1)
+    print(r.shape)
+    return r
 
 
 def doc(docstring):
